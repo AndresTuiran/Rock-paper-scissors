@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Rock, Papper and csissor</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Rock, Paper and cscissor</h1>
+        <div class="player1-options-container">
+            <h2>Escoje una opción</h2>
+            <div>
+                <button class="option-buttons" id="rock"><img src="images/rock.svg" alt=""></button>
+                <button class="option-buttons" id="paper"><img src="images/paper.svg" alt=""></button>
+                <button class="option-buttons" id="scissors"><img src="images/scissors.svg" alt=""></button>
+            </div>
+            <button class="startGame" id="startPlay">Iniciar</button>
+        </div>
+        <div class="battle-section" id="battleSection">
+            <div class=" battle-boxes battle-section-player1">
+                <h2>Player 1</h2>
+                <div>
+                    <img id="rock1" src="images/rock.svg" alt="">
+                    <img id="scissors1" src="images/scissors.svg" alt="">
+                    <img id="paper1" src="images/paper.svg" alt="">
+                </div>
+            </div>
+            <span>Vs</span>
+            <div class="battle-boxes battle-section-player2">
+                <h2>IA</h2>
+                <div>
+                    <img id="rock2" src="images/rock.svg" alt="">
+                    <img id="scissors2" src="images/scissors.svg" alt="">
+                    <img id="paper2" src="images/paper.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/var.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

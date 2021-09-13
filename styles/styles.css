@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 100% 0%, #9fa4ff 0, #486ee5 50%, #003fbb 100%);
+}
+input, button{
+    border:none; 
+} 
+h1{
+    padding: 30px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1rem;
+    font-family: 'Encode Sans SC', sans-serif;
+    
+}
+h2{
+    text-align: center;   
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+.player1-options-container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-buttons{
+    background-image: linear-gradient(180deg, #bce5ff 0, #9db9f2 50%, #7e8fb3 100%);
+    width: 200px;
+    height: 180px;
+    margin: 50px 20px;
+    border-radius: 1px black solid;
+    transition: transform 1s;
+}
+#rock:focus{
+    transform: scale(1.2);
+}
+#paper:focus{
+    transform: scale(1.2);
+}
+#scissors:focus{
+    transform: scale(1.2);
+}
+.option-buttons:hover ~ .options-buttons {
+    opacity: 0.3;
+}
+
+.option-buttons img{
+    width: 100%;
+    height: 100%;
+}
+
+.startGame{
+    background-image: linear-gradient(180deg, #d2f386 0, #bfec7f 16.67%, #a9e376 33.33%, #90d86c 50%, #75cd63 66.67%, #5ac45e 83.33%, #3bbc5b 100%);
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    border-radius: 4px;
+    box-shadow: black 5px 1px 1px 0;
+}
+.startGame:hover{
+    transform: scale(1.1) ;
+}
+
+/*Section2*//*Section2*//*Section2*//*Section2*//*Section2*//*Section2*/
+
+.battle-section{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+.battle-boxes{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(180deg, #bce5ff 0, #9db9f2 50%, #7e8fb3 100%);
+}
+
+.battle-boxes img{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.battle-section span{
+    margin-top: 50px;
+    font-family: 'Lobster', cursive;
+    font-size:2.4rem;
+}
